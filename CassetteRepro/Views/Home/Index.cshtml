@@ -1,0 +1,21 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+    Bundles.Reference("Content/Css");
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cassette</title>
+        @Bundles.RenderStylesheets()
+    </head>
+    <body>
+        <div>
+            This page uses Cassette
+            <input type="submit" value="do something" class="button" />
+        </div>
+    </body>
+</html>
